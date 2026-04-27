@@ -1,6 +1,8 @@
-﻿namespace SectionB_Question2_HomeAffairs
+﻿using System.Windows.Forms;
+
+namespace SectionB_Question2_HomeAffairs
 {
-    partial class Form1
+    partial class Form1 : Form
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +30,163 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            lblTitle = new Label();
+            lblName = new Label();
+            txtName = new TextBox();
+            lblID = new Label();
+            txtID = new TextBox();
+            label1 = new Label();
+            cmbCitizenship = new ComboBox();
+            btnValidate = new Button();
+            btnGenerate = new Button();
+            txtResults = new TextBox();
+            validate_id_result = new TextBox();
+            SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.DarkGreen;
+            lblTitle.Location = new Point(270, 9);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(435, 31);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Home Affairs Digital identity Processor\r\n";
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName.Location = new Point(252, 54);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(132, 20);
+            lblName.TabIndex = 1;
+            lblName.Text = "Enter your Name:\r\n";
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(455, 54);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(250, 27);
+            txtName.TabIndex = 2;
+            // 
+            // lblID
+            // 
+            lblID.AutoSize = true;
+            lblID.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblID.Location = new Point(252, 97);
+            lblID.Name = "lblID";
+            lblID.Size = new Size(106, 20);
+            lblID.TabIndex = 3;
+            lblID.Text = "Enter your ID:";
+            // 
+            // txtID
+            // 
+            txtID.Location = new Point(455, 97);
+            txtID.MaxLength = 13;
+            txtID.Name = "txtID";
+            txtID.Size = new Size(250, 27);
+            txtID.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(252, 138);
+            label1.Name = "label1";
+            label1.Size = new Size(180, 20);
+            label1.TabIndex = 5;
+            label1.Text = "Choose your Citizenship:\r\n";
+            // 
+            // cmbCitizenship
+            // 
+            cmbCitizenship.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbCitizenship.FormattingEnabled = true;
+            cmbCitizenship.Items.AddRange(new object[] { "Citizen ", "Permemanet Resident", "Vistitor" });
+            cmbCitizenship.Location = new Point(455, 135);
+            cmbCitizenship.Name = "cmbCitizenship";
+            cmbCitizenship.Size = new Size(200, 28);
+            cmbCitizenship.TabIndex = 6;
+            // 
+            // btnValidate
+            // 
+            btnValidate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnValidate.Location = new Point(455, 178);
+            btnValidate.Name = "btnValidate";
+            btnValidate.Size = new Size(100, 35);
+            btnValidate.TabIndex = 7;
+            btnValidate.Text = "Validate  ID\r\n";
+            btnValidate.UseVisualStyleBackColor = true;
+            // 
+            // btnGenerate
+            // 
+            btnGenerate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGenerate.Location = new Point(444, 479);
+            btnGenerate.Name = "btnGenerate";
+            btnGenerate.Size = new Size(130, 35);
+            btnGenerate.TabIndex = 8;
+            btnGenerate.Text = "Generate  Proflie";
+            btnGenerate.UseVisualStyleBackColor = true;
+            // 
+            // txtResults
+            // 
+            txtResults.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtResults.Location = new Point(342, 273);
+            txtResults.Multiline = true;
+            txtResults.Name = "txtResults";
+            txtResults.ReadOnly = true;
+            txtResults.ScrollBars = ScrollBars.Vertical;
+            txtResults.Size = new Size(400, 200);
+            txtResults.TabIndex = 9;
+            // 
+            // validate_id_result
+            // 
+            validate_id_result.BackColor = Color.LightSalmon;
+            validate_id_result.Location = new Point(455, 219);
+            validate_id_result.Name = "validate_id_result";
+            validate_id_result.Size = new Size(125, 27);
+            validate_id_result.TabIndex = 10;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            BackColor = Color.LightSalmon;
+            ClientSize = new Size(754, 526);
+            Controls.Add(validate_id_result);
+            Controls.Add(txtResults);
+            Controls.Add(btnGenerate);
+            Controls.Add(btnValidate);
+            Controls.Add(cmbCitizenship);
+            Controls.Add(label1);
+            Controls.Add(txtID);
+            Controls.Add(lblID);
+            Controls.Add(txtName);
+            Controls.Add(lblName);
+            Controls.Add(lblTitle);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Home Affairs Digital Identity  Processor";
+            UseWaitCursor = true;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblTitle;
+        private Label lblName;
+        private TextBox txtName;
+        private Label lblID;
+        private TextBox txtID;
+        private Label label1;
+        private ComboBox cmbCitizenship;
+        private Button btnValidate;
+        private Button btnGenerate;
+        private TextBox txtResults;
+        private TextBox validate_id_result;
     }
 }
