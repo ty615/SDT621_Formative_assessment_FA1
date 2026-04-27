@@ -53,6 +53,7 @@ namespace SectionB_Question2_HomeAffairs
             lblTitle.Size = new Size(435, 31);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Home Affairs Digital identity Processor\r\n";
+            lblTitle.UseWaitCursor = true;
             // 
             // lblName
             // 
@@ -63,6 +64,7 @@ namespace SectionB_Question2_HomeAffairs
             lblName.Size = new Size(132, 20);
             lblName.TabIndex = 1;
             lblName.Text = "Enter your Name:\r\n";
+            lblName.UseWaitCursor = true;
             // 
             // txtName
             // 
@@ -70,6 +72,7 @@ namespace SectionB_Question2_HomeAffairs
             txtName.Name = "txtName";
             txtName.Size = new Size(250, 27);
             txtName.TabIndex = 2;
+            txtName.UseWaitCursor = true;
             // 
             // lblID
             // 
@@ -80,6 +83,7 @@ namespace SectionB_Question2_HomeAffairs
             lblID.Size = new Size(106, 20);
             lblID.TabIndex = 3;
             lblID.Text = "Enter your ID:";
+            lblID.UseWaitCursor = true;
             // 
             // txtID
             // 
@@ -88,6 +92,7 @@ namespace SectionB_Question2_HomeAffairs
             txtID.Name = "txtID";
             txtID.Size = new Size(250, 27);
             txtID.TabIndex = 4;
+            txtID.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -98,6 +103,7 @@ namespace SectionB_Question2_HomeAffairs
             label1.Size = new Size(180, 20);
             label1.TabIndex = 5;
             label1.Text = "Choose your Citizenship:\r\n";
+            label1.UseWaitCursor = true;
             // 
             // cmbCitizenship
             // 
@@ -108,6 +114,7 @@ namespace SectionB_Question2_HomeAffairs
             cmbCitizenship.Name = "cmbCitizenship";
             cmbCitizenship.Size = new Size(200, 28);
             cmbCitizenship.TabIndex = 6;
+            cmbCitizenship.UseWaitCursor = true;
             // 
             // btnValidate
             // 
@@ -118,6 +125,8 @@ namespace SectionB_Question2_HomeAffairs
             btnValidate.TabIndex = 7;
             btnValidate.Text = "Validate  ID\r\n";
             btnValidate.UseVisualStyleBackColor = true;
+            btnValidate.UseWaitCursor = true;
+            btnValidate.Click += btnValidate_Click;
             // 
             // btnGenerate
             // 
@@ -128,6 +137,8 @@ namespace SectionB_Question2_HomeAffairs
             btnGenerate.TabIndex = 8;
             btnGenerate.Text = "Generate  Proflie";
             btnGenerate.UseVisualStyleBackColor = true;
+            btnGenerate.UseWaitCursor = true;
+            btnGenerate.Click += btnGenerate_Click;
             // 
             // txtResults
             // 
@@ -139,6 +150,7 @@ namespace SectionB_Question2_HomeAffairs
             txtResults.ScrollBars = ScrollBars.Vertical;
             txtResults.Size = new Size(400, 200);
             txtResults.TabIndex = 9;
+            txtResults.UseWaitCursor = true;
             // 
             // validate_id_result
             // 
@@ -147,6 +159,7 @@ namespace SectionB_Question2_HomeAffairs
             validate_id_result.Name = "validate_id_result";
             validate_id_result.Size = new Size(125, 27);
             validate_id_result.TabIndex = 10;
+            validate_id_result.UseWaitCursor = true;
             // 
             // Form1
             // 
