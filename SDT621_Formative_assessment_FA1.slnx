@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Question1_StudentMark/Question1_StudentMark.csproj" Id="2db281ac-7bc1-4822-98d4-579270e8022a" />
+  <Project Path="Question2_SimpleATM/Question2_SimpleATM.csproj" Id="9da0651e-a81b-4f1e-baad-660f70cb1002" />
+  <Project Path="Question3_LanguageManager/Question3_LanguageManager.csproj" Id="128ca59e-90f6-4e4f-a59a-a51d86258cf5" />
+  <Project Path="SectionB_Question1_Municipality/SectionB_Question1_Municipality.csproj" Id="edba6ea5-ffc1-4648-8347-0f6eef26fa8c" />
+  <Project Path="SectionB_Question2_HomeAffairs/SectionB_Question2_HomeAffairs.csproj" Id="b4658846-77e3-4f4d-8175-9b76e22ce733" />
+</Solution>
