@@ -40,7 +40,6 @@ namespace SectionB_Question2_HomeAffairs
             btnValidate = new Button();
             btnGenerate = new Button();
             txtResults = new TextBox();
-            validate_id_result = new TextBox();
             SuspendLayout();
             // 
             // lblTitle
@@ -152,22 +151,12 @@ namespace SectionB_Question2_HomeAffairs
             txtResults.TabIndex = 9;
             txtResults.UseWaitCursor = true;
             // 
-            // validate_id_result
-            // 
-            validate_id_result.BackColor = Color.LightSalmon;
-            validate_id_result.Location = new Point(455, 219);
-            validate_id_result.Name = "validate_id_result";
-            validate_id_result.Size = new Size(125, 27);
-            validate_id_result.TabIndex = 10;
-            validate_id_result.UseWaitCursor = true;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSalmon;
             ClientSize = new Size(754, 526);
-            Controls.Add(validate_id_result);
             Controls.Add(txtResults);
             Controls.Add(btnGenerate);
             Controls.Add(btnValidate);
@@ -200,6 +189,5 @@ namespace SectionB_Question2_HomeAffairs
         private Button btnValidate;
         private Button btnGenerate;
         private TextBox txtResults;
-        private TextBox validate_id_result;
     }
 }
