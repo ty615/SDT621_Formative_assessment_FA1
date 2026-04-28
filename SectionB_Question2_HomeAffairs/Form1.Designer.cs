@@ -173,6 +173,7 @@ namespace SectionB_Question2_HomeAffairs
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home Affairs Digital Identity  Processor";
             UseWaitCursor = true;
+            Load += Form1_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }

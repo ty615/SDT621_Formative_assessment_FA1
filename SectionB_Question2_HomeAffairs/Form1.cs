@@ -86,5 +86,10 @@ namespace SectionB_Question2_HomeAffairs
             txtResults.Text = fullProfile;
             txtResults.BackColor = System.Drawing.Color.White;
         }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -67,5 +67,10 @@ namespace Question3_LanguageManager
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
